@@ -1,0 +1,53 @@
+2025-04-11T08:38:51.332-04:00  INFO 17180 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Starting TestSis414Application using Java 17.0.8.1 with PID 17180 (E:\SIS414\demo\build\classes\java\main started by Jc_Ze in E:\SIS414\demo)
+2025-04-11T08:38:51.336-04:00  INFO 17180 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T08:38:52.952-04:00  INFO 17180 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-11T08:38:52.968-04:00  INFO 17180 --- [testSis414] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T08:38:52.968-04:00  INFO 17180 --- [testSis414] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T08:38:53.080-04:00  INFO 17180 --- [testSis414] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-11T08:38:53.083-04:00  INFO 17180 --- [testSis414] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1672 ms
+2025-04-11T08:38:53.903-04:00  INFO 17180 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-11T08:38:53.915-04:00  INFO 17180 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Started TestSis414Application in 3.302 seconds (process running for 3.829)
+2025-04-11T08:38:58.381-04:00  INFO 17180 --- [testSis414] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-11T08:38:58.382-04:00  INFO 17180 --- [testSis414] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-11T08:38:58.383-04:00  INFO 17180 --- [testSis414] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-11T08:39:10.261-04:00  INFO 17180 --- [testSis414] [http-nio-8080-exec-5] t.sis414.demo.controller.BookController  : Id: 2
+2025-04-11T08:40:23.507-04:00  INFO 17180 --- [testSis414] [http-nio-8080-exec-8] t.sis414.demo.controller.BookController  : Id: 4
+2025-04-11T08:48:14.405-04:00  INFO 25148 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Starting TestSis414Application using Java 17.0.8.1 with PID 25148 (E:\SIS414\demo\build\classes\java\main started by Jc_Ze in E:\SIS414\demo)
+2025-04-11T08:48:14.411-04:00  INFO 25148 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T08:48:16.293-04:00  INFO 25148 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-11T08:48:16.309-04:00  INFO 25148 --- [testSis414] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T08:48:16.309-04:00  INFO 25148 --- [testSis414] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T08:48:16.411-04:00  INFO 25148 --- [testSis414] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-11T08:48:16.411-04:00  INFO 25148 --- [testSis414] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1887 ms
+2025-04-11T08:48:17.077-04:00  INFO 25148 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-11T08:48:17.090-04:00  INFO 25148 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Started TestSis414Application in 3.558 seconds (process running for 4.147)
+2025-04-11T08:48:23.468-04:00  INFO 25148 --- [testSis414] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-11T08:48:23.471-04:00  INFO 25148 --- [testSis414] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-11T08:48:23.473-04:00  INFO 25148 --- [testSis414] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-04-11T08:48:23.545-04:00  INFO 25148 --- [testSis414] [http-nio-8080-exec-5] t.sis414.demo.controller.BookController  : Id: 4
+2025-04-11T08:52:10.590-04:00  INFO 11660 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Starting TestSis414Application using Java 17.0.8.1 with PID 11660 (E:\SIS414\demo\build\classes\java\main started by Jc_Ze in E:\SIS414\demo)
+2025-04-11T08:52:10.590-04:00  INFO 11660 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T08:52:11.624-04:00  INFO 11660 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-11T08:52:11.640-04:00  INFO 11660 --- [testSis414] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T08:52:11.640-04:00  INFO 11660 --- [testSis414] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T08:52:11.719-04:00  INFO 11660 --- [testSis414] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-11T08:52:11.719-04:00  INFO 11660 --- [testSis414] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1067 ms
+2025-04-11T08:52:12.109-04:00  INFO 11660 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-11T08:52:12.123-04:00  INFO 11660 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Started TestSis414Application in 2.055 seconds (process running for 2.462)
+2025-04-11T08:52:20.265-04:00  INFO 11660 --- [testSis414] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-11T08:52:20.265-04:00  INFO 11660 --- [testSis414] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-11T08:52:20.265-04:00  INFO 11660 --- [testSis414] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-04-11T08:52:20.319-04:00  INFO 11660 --- [testSis414] [http-nio-8080-exec-2] t.sis414.demo.controller.BookController  : Id: 4
+2025-04-11T08:53:00.966-04:00  INFO 3796 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Starting TestSis414Application using Java 17.0.8.1 with PID 3796 (E:\SIS414\demo\build\classes\java\main started by Jc_Ze in E:\SIS414\demo)
+2025-04-11T08:53:00.966-04:00  INFO 3796 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T08:53:02.019-04:00  INFO 3796 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-11T08:53:02.019-04:00  INFO 3796 --- [testSis414] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T08:53:02.019-04:00  INFO 3796 --- [testSis414] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T08:53:02.099-04:00  INFO 3796 --- [testSis414] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-11T08:53:02.099-04:00  INFO 3796 --- [testSis414] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1077 ms
+2025-04-11T08:53:02.494-04:00  INFO 3796 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-11T08:53:02.494-04:00  INFO 3796 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Started TestSis414Application in 2.064 seconds (process running for 2.478)
+2025-04-11T08:53:10.315-04:00  INFO 3796 --- [testSis414] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-11T08:53:10.315-04:00  INFO 3796 --- [testSis414] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-11T08:53:10.328-04:00  INFO 3796 --- [testSis414] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2025-04-11T08:53:10.378-04:00  INFO 3796 --- [testSis414] [http-nio-8080-exec-2] t.sis414.demo.controller.BookController  : Id: 4
