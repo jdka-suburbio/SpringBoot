@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import test.sis414.demo.model.Author;
 import test.sis414.demo.model.Book;
+import test.sis414.demo.repository.BookRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,40 +20,40 @@ public class BookController {
     private static final Logger logger = LoggerFactory.getLogger(BookController.class);
 
     private List<Book> bookList = new ArrayList<>();
+    private final BookRepository bookRepository;
 
+    /*
     public BookController()
     {
         Author author = new Author(1L, "Cervantes");
         Book book = new Book(1L, "Don Quijote", author);
         bookList.add(book);
     }
+    */
+    public BookController(BookRepository bookRepository)
+    {
+        this.bookRepository = bookRepository;
+    }
 
     @GetMapping
     public List<Book> getBooks()
     {
-        return bookList;
+        return this.bookRepository.findAll();
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Book> getBook(@PathVariable Long id)
     {
         logger.info("Id: " + id);
-
-        for(Book item : bookList)
-        {
-            if(item.getId() == id)
-            {
-                return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(item);
-            }
-        }
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        Book item = this.bookRepository.findById(id).get();
+        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(item);
+        //return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
     @PostMapping
     public Book addBook(@RequestBody Book book)
     {
-        bookList.add(book);
-        return  book;
+        return this.bookRepository.save(book);
     }
 
     @DeleteMapping("/{id}")
@@ -68,7 +69,7 @@ public class BookController {
         }
         return new ResponseEntity<>("Error removing item", HttpStatus.NOT_FOUND);
     }
-
+    /*
     @PutMapping("/{id}")
     public Book updateBook(@PathVariable Long id, @RequestBody Book book)
     {
@@ -87,4 +88,5 @@ public class BookController {
         }
         return null;
     }
+    */
 }

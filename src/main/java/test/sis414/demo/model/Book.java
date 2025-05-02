@@ -1,19 +1,32 @@
 package test.sis414.demo.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "book")
 public class Book
 {
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String title;
-    private Author author;
+    //private Author author;
 
     public Book(){}
 
+    public Book(Long id, String title)
+    {
+        this.id = id;
+        this.title = title;
+    }
+
+    /*
     public Book(Long id, String title, Author author)
     {
         this.id = id;
         this.title = title;
         this.author = author;
     }
+    */
 
     public Long getId() {
         return id;
@@ -31,6 +44,7 @@ public class Book
         this.title = title;
     }
 
+    /*
     public Author getAuthor() {
         return author;
     }
@@ -38,4 +52,5 @@ public class Book
     public void setAuthor(Author author) {
         this.author = author;
     }
+    */
 }
