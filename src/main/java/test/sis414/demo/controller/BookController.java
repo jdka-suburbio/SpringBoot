@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import test.sis414.demo.model.Author;
 import test.sis414.demo.model.Book;
+import test.sis414.demo.repository.AuthorRepository;
 import test.sis414.demo.repository.BookRepository;
 
 import java.util.ArrayList;
@@ -20,7 +21,9 @@ public class BookController {
     private static final Logger logger = LoggerFactory.getLogger(BookController.class);
 
     private List<Book> bookList = new ArrayList<>();
+
     private final BookRepository bookRepository;
+    private final AuthorRepository authorRepository;
 
     /*
     public BookController()
@@ -30,9 +33,10 @@ public class BookController {
         bookList.add(book);
     }
     */
-    public BookController(BookRepository bookRepository)
+    public BookController(BookRepository bookRepository, AuthorRepository authorRepository)
     {
         this.bookRepository = bookRepository;
+        this.authorRepository = authorRepository;
     }
 
     @GetMapping
@@ -53,6 +57,12 @@ public class BookController {
     @PostMapping
     public Book addBook(@RequestBody Book book)
     {
+        Author author = book.getAuthor();
+        if(author.getId() == null)
+        {
+            author = authorRepository.save(author);
+            book.setAuthor(author);
+        }
         return this.bookRepository.save(book);
     }
 

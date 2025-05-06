@@ -1,8 +1,20 @@
 package test.sis414.demo.model;
 
-public class Author {
+import jakarta.persistence.*;
+
+import java.util.List;
+
+@Entity
+@Table(name = "author")
+public class Author
+{
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
+
+    @OneToMany(mappedBy = "author", cascade = CascadeType.ALL)
+    private List<Book> books;
 
     public Author(){}
 
