@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/authors")
-@Tag(name="Author Controller", description="Operations about Author")
+@Tag(name="Author", description="This endpoint permits create, read, update and delete operations")
 public class AuthorController {
     private static final Logger logger = LoggerFactory.getLogger(AuthorController.class);
 
@@ -31,17 +31,36 @@ public class AuthorController {
         return this.authorRepository.findAll();
     }
 
+    @DeleteMapping("/{id}")
+    @Operation(
+            summary = "Delete an author",
+            tags = {"Author"},
+            responses = {
+                    @ApiResponse(responseCode = "204", description = "Author was delete successfully")
+            }
+    )
+    public ResponseEntity<String> deleteAuthor(@PathVariable Long id)
+    {
+        this.authorRepository.deleteById(id);
+        return new ResponseEntity<String>("", HttpStatus.NO_CONTENT);
+    }
+
     @PostMapping
     @Operation(
             summary = "Create a new author",
-            tags = {"Author Controller"},
+            tags = {"Author"},
             responses = {
-                    @ApiResponse(responseCode = "201", description = "Author created successfully")
+                    @ApiResponse(responseCode = "201", description = "Author created successfully"),
+                    @ApiResponse(responseCode = "400", description = "Bad Request")
             }
     )
     public ResponseEntity<Author> addAuthor(@RequestBody Author authorRequest)
     {
+        authorRequest.setId(null);
         Author author = this.authorRepository.save(authorRequest);
         return new ResponseEntity<Author>(author, HttpStatus.CREATED);
     }
 }
+
+
+

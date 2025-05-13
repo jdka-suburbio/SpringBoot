@@ -1,7 +1,7 @@
 package test.sis414.demo;
 
 import org.springframework.web.bind.annotation.*;
-
+/*
 @RestController
 @RequestMapping("/students")
 public class Students {
@@ -42,3 +42,4 @@ public class Students {
         return "Update Partial Student";
     }
 }
+*/
