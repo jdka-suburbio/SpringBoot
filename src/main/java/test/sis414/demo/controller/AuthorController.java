@@ -36,7 +36,8 @@ public class AuthorController {
             summary = "Delete an author",
             tags = {"Author"},
             responses = {
-                    @ApiResponse(responseCode = "204", description = "Author was delete successfully")
+                    @ApiResponse(responseCode = "204", description = "Author was delete successfully"),
+                    @ApiResponse(responseCode = "400", description = "Bad Request")
             }
     )
     public ResponseEntity<String> deleteAuthor(@PathVariable Long id)
