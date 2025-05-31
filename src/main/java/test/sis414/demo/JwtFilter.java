@@ -9,16 +9,22 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
+import test.sis414.demo.services.TokenBlackListService;
 import test.sis414.demo.util.JwtUtil;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 @Component
 public class JwtFilter extends OncePerRequestFilter {
 
     @Autowired
     private JwtUtil jwtUtil;
+
+    @Autowired
+    private TokenBlackListService blackListService;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
@@ -28,7 +34,12 @@ public class JwtFilter extends OncePerRequestFilter {
 
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             String token = authHeader.substring(7);
-            if (!jwtUtil.isTokenExpired(token)) {
+
+            if(blackListService.isBlackListToken(token)){
+                System.out.println("Intercepted Token");
+            }
+
+            if (!jwtUtil.isTokenExpired(token) && !blackListService.isBlackListToken(token)) {
                 String username = jwtUtil.extractUsername(token);
                 UsernamePasswordAuthenticationToken authentication =
                         new UsernamePasswordAuthenticationToken(username, null, new ArrayList<>());

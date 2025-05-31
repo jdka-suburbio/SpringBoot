@@ -2,6 +2,7 @@ package test.sis414.demo.util;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
@@ -40,5 +41,15 @@ public class JwtUtil {
     public boolean isTokenExpired(String token){
         return Jwts.parser().setSigningKey(SECRET_KEY)
                 .parseClaimsJws(token).getBody().getExpiration().before(new Date());
+    }
+
+    public String getRequestToken(HttpServletRequest request){
+        final String authHeader = request.getHeader("Authorization");
+        if (authHeader != null && authHeader.startsWith("Bearer "))
+        {
+            String token = authHeader.substring(7);
+            return token;
+        }
+        return null;
     }
 }
