@@ -2,6 +2,7 @@ package test.sis414.demo.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +13,7 @@ import test.sis414.demo.model.Author;
 import test.sis414.demo.repository.AuthorRepository;
 import java.util.List;
 
+@SecurityRequirement(name = "bearerAuth")
 @RestController
 @RequestMapping("/authors")
 @Tag(name="Author", description="This endpoint permits create, read, update and delete operations")

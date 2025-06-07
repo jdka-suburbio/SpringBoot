@@ -1,2 +1,106 @@
-2025-05-30T20:13:30.298-04:00  WARN 16628 --- [testSis414] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-30T20:13:34.667-04:00  WARN 16628 --- [testSis414] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07T11:01:15.473-04:00  INFO 2348 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Starting TestSis414Application using Java 21.0.5 with PID 2348 (D:\sis414\SpringBoot\build\classes\java\main started by Flia in D:\sis414\SpringBoot)
+2025-06-07T11:01:15.542-04:00  INFO 2348 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : No active profile set, falling back to 1 default profile: "default"
+2025-06-07T11:01:23.432-04:00  INFO 2348 --- [testSis414] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07T11:01:24.042-04:00  INFO 2348 --- [testSis414] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 522 ms. Found 2 JPA repository interfaces.
+2025-06-07T11:01:26.742-04:00  INFO 2348 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-07T11:01:26.785-04:00  INFO 2348 --- [testSis414] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-07T11:01:26.787-04:00  INFO 2348 --- [testSis414] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-07T11:01:27.274-04:00  INFO 2348 --- [testSis414] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-07T11:01:27.276-04:00  INFO 2348 --- [testSis414] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11337 ms
+2025-06-07T11:01:29.193-04:00  INFO 2348 --- [testSis414] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07T11:01:29.908-04:00  INFO 2348 --- [testSis414] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-07T11:01:30.066-04:00  INFO 2348 --- [testSis414] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-07T11:01:34.335-04:00  INFO 2348 --- [testSis414] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07T11:01:35.584-04:00  INFO 2348 --- [testSis414] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-07T11:01:37.112-04:00  INFO 2348 --- [testSis414] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c2a7d53
+2025-06-07T11:01:37.119-04:00  INFO 2348 --- [testSis414] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-07T11:01:37.447-04:00  WARN 2348 --- [testSis414] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-07T11:01:37.616-04:00  INFO 2348 --- [testSis414] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07T11:01:42.399-04:00  INFO 2348 --- [testSis414] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07T11:01:42.635-04:00  INFO 2348 --- [testSis414] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07T11:01:44.661-04:00  WARN 2348 --- [testSis414] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07T11:01:44.827-04:00  INFO 2348 --- [testSis414] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-07T11:01:46.358-04:00  INFO 2348 --- [testSis414] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-07T11:01:48.560-04:00  INFO 2348 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-07T11:01:48.596-04:00  INFO 2348 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Started TestSis414Application in 35.531 seconds (process running for 37.768)
+2025-06-07T11:01:50.233-04:00  INFO 2348 --- [testSis414] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07T11:01:50.235-04:00  INFO 2348 --- [testSis414] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-07T11:01:50.238-04:00  INFO 2348 --- [testSis414] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-06-07T11:04:17.882-04:00  INFO 16168 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Starting TestSis414Application using Java 21.0.5 with PID 16168 (D:\sis414\SpringBoot\build\classes\java\main started by Flia in D:\sis414\SpringBoot)
+2025-06-07T11:04:17.910-04:00  INFO 16168 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : No active profile set, falling back to 1 default profile: "default"
+2025-06-07T11:04:22.601-04:00  INFO 16168 --- [testSis414] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07T11:04:22.924-04:00  INFO 16168 --- [testSis414] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 283 ms. Found 2 JPA repository interfaces.
+2025-06-07T11:04:29.201-04:00  INFO 16168 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-07T11:04:29.245-04:00  INFO 16168 --- [testSis414] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-07T11:04:29.247-04:00  INFO 16168 --- [testSis414] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-07T11:04:29.619-04:00  INFO 16168 --- [testSis414] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-07T11:04:29.620-04:00  INFO 16168 --- [testSis414] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11358 ms
+2025-06-07T11:04:32.333-04:00  INFO 16168 --- [testSis414] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07T11:04:33.039-04:00  INFO 16168 --- [testSis414] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-07T11:04:33.387-04:00  INFO 16168 --- [testSis414] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-07T11:04:37.068-04:00  INFO 16168 --- [testSis414] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07T11:04:37.193-04:00  INFO 16168 --- [testSis414] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-07T11:04:38.728-04:00  INFO 16168 --- [testSis414] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@101c15ad
+2025-06-07T11:04:38.735-04:00  INFO 16168 --- [testSis414] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-07T11:04:38.849-04:00  WARN 16168 --- [testSis414] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-07T11:04:38.947-04:00  INFO 16168 --- [testSis414] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07T11:04:43.542-04:00  INFO 16168 --- [testSis414] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07T11:04:43.659-04:00  INFO 16168 --- [testSis414] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07T11:04:45.961-04:00  WARN 16168 --- [testSis414] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07T11:04:46.122-04:00  INFO 16168 --- [testSis414] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-07T11:04:47.558-04:00  INFO 16168 --- [testSis414] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-07T11:04:48.817-04:00  INFO 16168 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-07T11:04:48.858-04:00  INFO 16168 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Started TestSis414Application in 32.387 seconds (process running for 33.533)
+2025-06-07T11:04:53.426-04:00  INFO 16168 --- [testSis414] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07T11:04:53.433-04:00  INFO 16168 --- [testSis414] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-07T11:04:53.436-04:00  INFO 16168 --- [testSis414] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-07T11:04:55.547-04:00  INFO 16168 --- [testSis414] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1058 ms
+2025-06-07T11:08:06.263-04:00  INFO 3804 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Starting TestSis414Application using Java 21.0.5 with PID 3804 (D:\sis414\SpringBoot\build\classes\java\main started by Flia in D:\sis414\SpringBoot)
+2025-06-07T11:08:06.273-04:00  INFO 3804 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : No active profile set, falling back to 1 default profile: "default"
+2025-06-07T11:08:10.314-04:00  INFO 3804 --- [testSis414] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07T11:08:10.493-04:00  INFO 3804 --- [testSis414] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 2 JPA repository interfaces.
+2025-06-07T11:08:12.957-04:00  INFO 3804 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-07T11:08:12.990-04:00  INFO 3804 --- [testSis414] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-07T11:08:12.991-04:00  INFO 3804 --- [testSis414] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-07T11:08:13.227-04:00  INFO 3804 --- [testSis414] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-07T11:08:13.229-04:00  INFO 3804 --- [testSis414] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6728 ms
+2025-06-07T11:08:14.611-04:00  INFO 3804 --- [testSis414] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07T11:08:14.863-04:00  INFO 3804 --- [testSis414] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-07T11:08:15.002-04:00  INFO 3804 --- [testSis414] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-07T11:08:16.694-04:00  INFO 3804 --- [testSis414] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07T11:08:16.797-04:00  INFO 3804 --- [testSis414] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-07T11:08:17.793-04:00  INFO 3804 --- [testSis414] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1760e594
+2025-06-07T11:08:17.799-04:00  INFO 3804 --- [testSis414] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-07T11:08:18.033-04:00  WARN 3804 --- [testSis414] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-07T11:08:18.176-04:00  INFO 3804 --- [testSis414] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07T11:08:21.445-04:00  INFO 3804 --- [testSis414] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07T11:08:21.558-04:00  INFO 3804 --- [testSis414] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07T11:08:22.655-04:00  WARN 3804 --- [testSis414] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07T11:08:22.839-04:00  INFO 3804 --- [testSis414] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-07T11:08:23.985-04:00  INFO 3804 --- [testSis414] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-07T11:08:25.117-04:00  INFO 3804 --- [testSis414] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-07T11:08:25.145-04:00  INFO 3804 --- [testSis414] [main] test.sis414.demo.TestSis414Application   : Started TestSis414Application in 20.355 seconds (process running for 21.935)
+2025-06-07T11:08:41.113-04:00  INFO 3804 --- [testSis414] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07T11:08:41.115-04:00  INFO 3804 --- [testSis414] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-07T11:08:41.125-04:00  INFO 3804 --- [testSis414] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
