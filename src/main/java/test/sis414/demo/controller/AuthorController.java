@@ -15,6 +15,7 @@ import java.util.List;
 
 @SecurityRequirement(name = "bearerAuth")
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/authors")
 @Tag(name="Author", description="This endpoint permits create, read, update and delete operations")
 public class AuthorController {
